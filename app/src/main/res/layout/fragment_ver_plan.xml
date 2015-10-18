@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp"
+    tools:context="simon.unicauca.edu.co.planpop.Fragments.VerPlanFragment"
+    >
+    <ImageView
+        android:id="@+id/image_VerPlan"
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/padding_medium"
+        android:layout_marginTop="@dimen/padding_small"
+        android:layout_marginBottom="@dimen/padding_medium"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/plan_nombre"
+
+            android:layout_margin="@dimen/padding_verySmall"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_verplan"
+            android:hint="@string/name"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_margin="@dimen/padding_verySmall"
+            android:id="@+id/plan_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_verplan"
+            android:hint="@string/description"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <EditText
+                android:layout_margin="@dimen/padding_verySmall"
+                android:id="@+id/plan_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_verplan"
+                android:hint="@string/fecha"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="date"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <EditText
+                android:layout_margin="@dimen/padding_verySmall"
+                android:id="@+id/plan_Hora"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_verplan"
+                android:hint="@string/hora"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="datetime"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:layout_margin="@dimen/padding_verySmall"
+            android:id="@+id/plan_lugar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_verplan"
+            android:hint="@string/lugar"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:layout_margin="@dimen/padding_verySmall"
+            android:id="@+id/plan_creador"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_verplan"
+            android:hint="Creador"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="datetime"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:layout_margin="@dimen/padding_verySmall"
+                android:id="@+id/estado"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_verplan"
+                android:hint="Estado"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="datetime"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:layout_margin="@dimen/padding_verySmall"
+                android:id="@+id/plan_numero_participantes"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_verplan"
+                android:hint="Numero Participantes"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="datetime"/>
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_ver_lugar"
+            android:layout_margin="@dimen/padding_medium"
+            android:background="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_verplan"
+            android:text="ver mapa"
+            android:textColor="@color/blanco"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_margin="@dimen/padding_medium"
+            android:id="@+id/btn_asistir"
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_verplan"
+            android:text="Asistir"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+</LinearLayout>
